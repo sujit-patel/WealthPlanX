@@ -42,7 +42,3 @@ An interactive and visually appealing financial planning tool built with **React
 
 ---
 
-npm install
-
-# Start development server
-npm run dev
