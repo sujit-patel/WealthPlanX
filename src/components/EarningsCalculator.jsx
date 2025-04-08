@@ -1,4 +1,3 @@
-// src/components/EarningsCalculator.jsx (or wherever you keep reusable components)
 import React, { useState } from "react";
 
 function EarningsCalculator({ showTitle = true }) {

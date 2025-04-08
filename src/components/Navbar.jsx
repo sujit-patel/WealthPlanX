@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // ✅ Import Link from react-router-dom
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 function Navbar() {
@@ -26,9 +26,6 @@ function Navbar() {
             About
           </Link>
 
-          {/* <Link to="/contact" className="hover:text-gray-400">
-            Contact
-          </Link> */}
         </ul>
 
         {/* Mobile Menu Button */}
@@ -68,15 +65,6 @@ function Navbar() {
           >
             About
           </Link>
-          {/* <li>
-            <Link
-              to="/contact"
-              onClick={() => setIsOpen(false)}
-              className="block py-2 hover:bg-gray-700"
-            >
-              Contact
-            </Link>
-          </li> */}
         </ul>
       </div>
     </nav>

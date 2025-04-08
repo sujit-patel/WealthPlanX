@@ -1,4 +1,3 @@
-// src/components/InvestmentReturnCalculator.jsx
 import React, { useState } from "react";
 
 function InvestmentReturnCalculator({ showTitle = true }) {

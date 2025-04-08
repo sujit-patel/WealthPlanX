@@ -7,6 +7,7 @@ import Footer from "../components/Footer.jsx";
 import Navbar from "../components/Navbar.jsx";
 import SipCalculator from "../components/SipCalculator.jsx";
 import GoldInvestmentCalculator from "../components/GoldInvestmentCalculator.jsx";
+import MoneySavingCalculator from "../components/MoneySavingCalculator.jsx";
 
 function Calculators() {
   const navigate = useNavigate();
@@ -110,6 +111,31 @@ function Calculators() {
             <div className="text-right mt-4">
               <button
                 onClick={() => navigate("/gold")}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition font-medium"
+              >
+                Visit Page
+              </button>
+            </div>
+          </motion.div>
+
+          {/* Money Saving Calculator */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="bg-white p-6 rounded-2xl shadow-xl transform transition duration-300 hover:scale-105"
+          >
+            <h3 className="text-xl font-bold text-gray-800 mb-4">
+              💰 Money Saving Goal
+            </h3>
+            <MoneySavingCalculator
+              showExplanation={false}
+              inHero={true}
+              hideLayout={true}
+            />
+            <div className="text-right mt-4">
+              <button
+                onClick={() => navigate("/saving")}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition font-medium"
               >
                 Visit Page

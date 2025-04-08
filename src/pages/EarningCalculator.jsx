@@ -1,60 +1,68 @@
-// src/pages/EarningCalculator.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import EarningsCalculator from "../components/EarningsCalculator";
+import CalculatorSidebar from "./CalculatorSidebar";
 
 function EarningCalculator() {
+  useEffect(() => {
+    document.title = "Earnings Goal Calculator | WealthPlanner";
+  }, []);
+
   return (
-    <>
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-100 via-white to-gray-200">
       <Navbar />
-      <div className="container mx-auto px-4 py-12">
-        {/* Page Heading */}
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-800">
-            🎯 Earnings Goal Tool
-          </h1>
-          <p className="text-gray-600 mt-2">
-            Calculate how much you need to earn daily or monthly to hit your
-            target.
-          </p>
-        </div>
 
-        {/* Calculator Component */}
-        <EarningsCalculator showTitle={false} />
+      <main className="flex-grow py-12 px-4">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row">
+          {/* Sidebar */}
+          <CalculatorSidebar />
 
-        {/* Tool Explanation */}
-        <div className="max-w-2xl mx-auto mt-12 bg-blue-50 border border-blue-200 p-6 rounded-xl text-gray-800">
-          <h2 className="text-2xl font-semibold mb-4">
-            🛠️ How This Tool Works
-          </h2>
-          <ul className="list-disc list-inside space-y-2 text-base">
-            <li>
-              Enter your <strong>total target amount</strong> — for example,
-              ₹10,000.
-            </li>
-            <li>
-              Choose whether you want to hit the goal in <strong>days</strong>{" "}
-              or <strong>months</strong>.
-            </li>
-            <li>
-              Input the number of days or months you want to use to reach your
-              goal.
-            </li>
-            <li>
-              Click <strong>“Calculate ✅”</strong> and the tool will tell you
-              how much you need to earn per day or month.
-            </li>
-            <li>
-              If you choose <strong>monthly</strong> mode, you’ll also see an
-              approximate <strong>daily estimate</strong> based on a 30-day
-              month.
-            </li>
-          </ul>
+          {/* Main Content */}
+          <div className="flex-grow bg-white p-6 rounded-xl shadow-lg">
+            <h1 className="text-2xl font-bold text-center mb-4 text-blue-700">
+              🎯 Earnings Goal Calculator
+            </h1>
+            <p className="text-center text-gray-600 mb-8">
+              Calculate how much you need to earn daily or monthly to hit your
+              target.
+            </p>
+
+            <EarningsCalculator showTitle={false} />
+
+            {/* Explanation */}
+            <div className="mt-10 bg-blue-50 p-6 rounded-xl text-sm text-gray-700">
+              <h2 className="text-xl font-semibold mb-3">
+                📘 How This Tool Works:
+              </h2>
+              <ul className="list-disc list-inside space-y-1">
+                <li>
+                  Enter your <strong>total goal amount</strong> (e.g., ₹10,000).
+                </li>
+                <li>
+                  Select if your goal is to be achieved in <strong>days</strong>{" "}
+                  or <strong>months</strong>.
+                </li>
+                <li>
+                  Input the number of days or months for the goal timeline.
+                </li>
+                <li>
+                  Click <strong>"Calculate ✅"</strong> to view the
+                  daily/monthly earning needed.
+                </li>
+                <li>
+                  If <strong>monthly</strong> is selected, a rough{" "}
+                  <strong>daily breakdown</strong> (30-day month) will also
+                  show.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
+      </main>
+
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -11,6 +11,7 @@ import Disclaimer from "./pages/Disclaimer.jsx";
 import Support from "./pages/Support.jsx";
 import SipCalculator from "./pages/SipCalculator.jsx";
 import GoldInvement from "./pages/GoldInvement.jsx";
+import MoneySavingCalculator from "./pages/MoneySavingCalculator.jsx";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/support" element={<Support />}></Route>
           <Route path="/sip" element={<SipCalculator />}></Route>
           <Route path="/gold" element={<GoldInvement />}></Route>
+          <Route path="/saving" element={<MoneySavingCalculator />}></Route>
         </Routes>
       </BrowserRouter>
     </>
