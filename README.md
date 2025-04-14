@@ -1,4 +1,4 @@
-# 💰 Finance Calculator App
+# 💰 Finance Calculator WebApp
 
 An interactive and visually appealing financial planning tool built with **React**. Includes a range of calculators like SIP, Earnings Goal, Investment Return, and Gold Investment — all in one place with smooth animations and clean design.
 
