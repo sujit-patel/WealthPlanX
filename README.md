@@ -4,6 +4,16 @@ An interactive and visually appealing financial planning tool built with **React
 
 ---
 
+## 🛠️ Tech Stack
+
+- **React**
+- **Tailwind CSS**
+- **Framer Motion**
+- **React Router**
+- **Lucide Icons**
+
+---
+
 ## 🚀 Features
 
 - 🧮 Multiple Financial Calculators:
@@ -30,15 +40,5 @@ An interactive and visually appealing financial planning tool built with **React
 
 
 
----
 
-## 🛠️ Tech Stack
-
-- **React**
-- **Tailwind CSS**
-- **Framer Motion**
-- **React Router**
-- **Lucide Icons**
-
----
 
