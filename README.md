@@ -1,6 +1,6 @@
 # 💰 Finance Calculator WebApp
 
-An interactive and visually appealing financial planning tool built with **React**. Includes a range of calculators like SIP, Earnings Goal, Investment Return, and Gold Investment — all in one place with smooth animations and clean design.
+An interactive and visually appealing financial planning tool built with **React**. Includes a range of calculators like SIP, Earnings Goal, Investment Return, and Gold Investment all in one place with smooth animations and clean design.
 
 ---
 
@@ -13,7 +13,7 @@ An interactive and visually appealing financial planning tool built with **React
   - Gold Investment Calculator
 - ✨ Smooth animations using **Framer Motion**
 - 📱 Mobile-responsive & user-friendly UI
-- 🔐 Privacy focused — no login, no tracking
+- 🔐 Privacy focused no login, no tracking
 - 🎨 Built with Tailwind CSS + React Icons
 
 ---
